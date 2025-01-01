@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-17T08:28:00.093463" rpa="false" schemaversion="5">
+<suite id="s1" name="UnboxRobotics Assigment" source="D:\BharatAutomation\UnboxRobotics_Assigment">
+<suite id="s1-s1" name="TestCase" source="D:\BharatAutomation\UnboxRobotics_Assigment\TestCase">
+<suite id="s1-s1-s1" name="I" source="D:\BharatAutomation\UnboxRobotics_Assigment\TestCase\i.robot">
+<test id="s1-s1-s1-t1" name="Open Browser Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:00.680916" level="INFO">Opening browser 'chrome' to base url 'https://www.mypustak.com/'.</msg>
+<arg>https://www.mypustak.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-17T08:28:00.679938" elapsed="3.387450"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-17T08:28:04.068568" elapsed="0.065330"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-17T08:28:09.136835" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-17T08:28:04.135030" elapsed="5.004154"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.191322" level="INFO">${Books} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.120")&gt;, &lt;selenium.webdri...</msg>
+<var>${Books}</var>
+<arg>${allBoook}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.140739" elapsed="0.050939"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.245911" level="INFO">${bookName} = 40 Days Jee Main Physics
+By Others
+₹395 Free
+Availability
+Used
+ Add To Cart</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.194196" elapsed="0.052199"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.246924" elapsed="0.002659"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.250143" elapsed="0.001398"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.120")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.193683" elapsed="0.058147"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.299927" level="INFO">${bookName} = Most Loved
+Arihant Cbse Chapterwise-Question Bank Physics For Class 12 (2024 – 2010) | Chapterwise Manner | Trend Analysis | Key Idea | Common Mistakes | Concept Enhancer | 3 Sample Question Papers
+By...</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.252626" elapsed="0.048016"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.301279" elapsed="0.003735"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.305835" elapsed="0.001382"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.121")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.252208" elapsed="0.055408"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.362806" level="INFO">${bookName} = Arihant Cbse Chapterwise Question Bank | Chemistry | (2024-2010) With Solutions For Chemistry Class 12th | Previous Year Questions (Pyq) | As Per The Latest Cbse Syllabus (2024-25) | All Main | Compt ...</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.308766" elapsed="0.054570"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.364121" elapsed="0.004242"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.369069" elapsed="0.001634"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.122")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.308174" elapsed="0.062843"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.421498" level="INFO">${bookName} = Arihant Cbse Chapterwise Question Bank | Mathematics | (2024-2011) With Solutions For Mathematics Class 12th | As Per The Latest Cbse Syllabus (2024-25) | All Main | Compt &amp; Sample Papers Upto 2024 I ...</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.372026" elapsed="0.049979"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.422517" elapsed="0.003353"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.426325" elapsed="0.001021"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.123")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.371430" elapsed="0.056494"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.465763" level="INFO">${bookName} = Quantitative Aptitude For Competitive Examinations Fully Solved
+By R S Aggarwal
+₹425 Free
+Availability
+Used
+ Add To Cart</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.429179" elapsed="0.036929"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.466766" elapsed="0.002705"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.469930" elapsed="0.001043"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.124")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.428363" elapsed="0.042970"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.514641" level="INFO">${bookName} = Applied Quantitative Finance Using Python For Financial Analysis (Hb 2021)
+By Garita M.
+₹3784 ₹5912 36% Off
+Availability
+Brand New
+ Add To Cart</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.472416" elapsed="0.042908"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.515949" elapsed="0.003215"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.519905" elapsed="0.001703"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.125")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.471766" elapsed="0.050234"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.558997" level="INFO">${bookName} = Super Quicker Arithmetic
+By Rph Editorial Board...
+₹279 ₹340 18% Off
+Availability
+Brand New
+ Add To Cart</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.523151" elapsed="0.036106"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.559563" elapsed="0.002387"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.562419" elapsed="0.001584"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.126")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.522493" elapsed="0.041796"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.606964" level="INFO">${bookName} = Most Loved
+Encyclopedia Of General Science For General Competitions
+By Siddharth Mukherji ...
+₹198 ₹335 41% Off
+Availability
+Brand New
+ Add To Cart</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.565201" elapsed="0.042159"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.607795" elapsed="0.002334"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.610533" elapsed="0.001242"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.127")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.564676" elapsed="0.047410"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.656699" level="INFO">${bookName} = Oswaal Lil Legends Know Me Series, I Am A Whale/Fascinating Animal Book- Sea Animal, Exciting Illustrated Book For Kids, Age 2+
+By Oswaal Editorial Board...
+₹65 ₹69 6% Off
+Availability
+Brand New
+ Add ...</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.613275" elapsed="0.043833"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.657537" elapsed="0.002733"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.661034" elapsed="0.001652"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.128")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.612664" elapsed="0.050378"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:09.704985" level="INFO">${bookName} = Most Loved
+Crack Imu-Cet Entrance Exam
+By Jmdi
+₹1349 ₹1499 10% Off
+Availability
+Brand New
+ Add To Cart</msg>
+<var>${bookName}</var>
+<arg>${bkele}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.664335" elapsed="0.041063"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>:--${bookName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.705897" elapsed="0.002426"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>*******************************************</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.708899" elapsed="0.001060"/>
+</kw>
+<var name="${bkele}">&lt;selenium.webdriver.remote.webelement.WebElement (session="961cfe077de02454584a2e72eabac890", element="f.BBA517674FC29A0F4F49E2AC804190AE.d.09E7FD776E51EA4C52F67B711137FB5F.e.129")&gt;</var>
+<status status="PASS" start="2024-12-17T08:28:09.663545" elapsed="0.046645"/>
+</iter>
+<var>${bkele}</var>
+<value>@{Books}</value>
+<status status="PASS" start="2024-12-17T08:28:09.192769" elapsed="0.517550"/>
+</for>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${addTocart1}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-17T08:28:09.710805" elapsed="0.374800"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-17T08:28:15.087307" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-17T08:28:10.086459" elapsed="5.001454"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-17T08:28:15.089628" level="INFO">Clicking element 'xpath=(//div[contains(@class,'jsx-313054587 flex items')])[10]'.</msg>
+<arg>${addTocart1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T08:28:15.088739" elapsed="0.164133"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-17T08:28:20.254887" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-17T08:28:15.253618" elapsed="5.002098"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-12-17T08:28:20.260011" elapsed="2.343846"/>
+</kw>
+<status status="PASS" start="2024-12-17T08:28:00.677735" elapsed="21.927040"/>
+</test>
+<status status="PASS" start="2024-12-17T08:28:00.137125" elapsed="22.470748"/>
+</suite>
+<status status="PASS" start="2024-12-17T08:28:00.131391" elapsed="22.480270"/>
+</suite>
+<status status="PASS" start="2024-12-17T08:28:00.099695" elapsed="22.515200"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="UnboxRobotics Assigment">UnboxRobotics Assigment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCase">UnboxRobotics Assigment.TestCase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="I">UnboxRobotics Assigment.TestCase.I</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
