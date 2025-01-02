@@ -49,4 +49,4 @@ ${goingToCart}    xpath=//button[contains(text(),'GOING TO CART')]
 ${missingCartItemLocation}    xpath=//div[@class="s2gOFd"]
 ${missingCartItemTxt}    Missing Cart items?
 ${loginToSee_location}    xpath=//div[@class="orqM3-"]
-${lOginTOSee_Txt}    Login to see the items you added previouslyj
+${lOginTOSee_Txt}    Login to see the items you added previously
